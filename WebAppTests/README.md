@@ -63,6 +63,9 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	Web Footer -
 		As a tester I want to see a footer section in the HTML output, with a number of tests passed, failed, not
 		executed, etc
-	Excel write and run -
-		As a test writer, I want Excel to generate the source code for test .cs script, then compile and 
-		execute the test
+	Excel write script -
+		As a test writer, I want Excel to generate the source code for test .cs script 
+	Excel Compile
+		As a test writer, I want Excel to compile the script
+	Excel Execute
+		As a tester, I want Excel to execute the test
