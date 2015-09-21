@@ -2,7 +2,10 @@
 ## Web Application Testing with Excel and C sharp
 A framework for test automation using C#, Selenium Webdriver, input from Excel, output results to a web page
 
-
+## Purpose       
+	- Keyword driven test harness; uses Selenium WebDriver
+	- Parameters fetched from Excel file
+	- Test results stored to .log file and html
 
 
 
