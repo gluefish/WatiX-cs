@@ -11,8 +11,6 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 ##In Progress
 **************************************************************************************************************************
 
-	Web Output - started 9/11
-		As a user, I want to see a web page with the information and results of every test that has been run.
 	Log Output - 
 		As a user, I want to be able to examine a log file of the processes that occurred within a test run.
 	Excel Read Vars - started 9/4
@@ -20,9 +18,12 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	Output Location -
 		As a user, I want the log file and web page to be put in a separate folder for each testing session, under a 
 		folder "results".
-	Method locations -
-		As a programmer I want to have my methods in a logical location, with a file for each kind - like Excel 
-		methods in an Excel file
+	Web Page Header Info -
+		As a tester, I want the html output page to include data about the test session, in a header above the 
+		individual test lines.
+	Web Page Test Info - 
+		As a tester, I want the html output page to have some meta info present on individual test lines.
+
 
 **************************************************************************************************************************
 ##Complete
@@ -50,6 +51,12 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a tester I want some keywords to be simple shortcuts to the longer C#/Webdriver commands.
 	Read all tests in from Excel -
 		As a tester I want the program to read all the test names to execute from Excel, then run them all.
+	Web Output - started 9/11 - completed 9/20
+		As a user, I want to see a web page with the information and results of every test that has been run.
+		I want to put these in a unique folder along with the other results of individual tests.
+	Method locations - completed 9/17
+		As a programmer I want to have my methods in a logical location, with a file for each kind - like Excel 
+		methods in an Excel file	
 
 
 
