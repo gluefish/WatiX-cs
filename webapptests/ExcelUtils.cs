@@ -4,10 +4,12 @@ namespace WebTest
 {
     public partial class Program
     {
-        public static void openXL(string xlPath)
+        public static void openXL(string xlp)
         {
             xla = new Excel.Application();
-            xlw = xla.Workbooks.Open(xlPath);
+            //xlw = xla.Workbooks.Open("test.xlsx");
+
+            xlw = xla.Workbooks.Open(xlp);
             xls = xlw.Worksheets.get_Item(1);
             xlr = xls.UsedRange;
         }
