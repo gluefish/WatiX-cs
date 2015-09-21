@@ -12,6 +12,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using System.Diagnostics;
 using OpenQA.Selenium;
 
 namespace WebTest
@@ -107,6 +108,15 @@ namespace WebTest
         {
             string app_path = System.IO.Path.GetDirectoryName(new System.Uri(System.Reflection.Assembly.GetExecutingAssembly().CodeBase).LocalPath);
             return app_path;
+        }
+
+        public static string curname()
+        {
+            string pn = Process.GetCurrentProcess().ProcessName;
+            string[] strArr = null;
+            strArr = pn.Split('.');
+            string cn = strArr[0];
+            return cn;
         }
         public static void timeout(int seconds)
         {
