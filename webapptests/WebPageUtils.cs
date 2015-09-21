@@ -34,9 +34,10 @@ namespace WebTest
         {
             //string pr;
             pr = "<table border=\"1\" style=\"width: 100 % \">";
-            pr += "<tr style=\"background-color:black; color:white\"><th>Test No.</th><th>Test Name</th><th>Test Description</th><th>Test Result</th></tr>";
+            pr += "<tr style=\"background-color:black; color:white\"><th>Test No.</th><th>Time</th><th>Test Name</th><th>Test Description</th><th>Test Result</th></tr>";
 
             pr += "<tr><td>Test1</td>";
+            pr += "<td>16:09:00</td>";
             pr += "<td>Login</td>";
             pr += "<td>Using a valid user name and password, user is able to log into the system</td>";
             pr += "<td style=\"background-color:green; color:white\"><b>PASS</b></td></tr>";
