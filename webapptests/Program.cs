@@ -11,7 +11,6 @@
 *               - Generate a unique test ID for file name
 *               - Generate a folder for day's tests
 *****************************************************************/
-
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -22,54 +21,49 @@ namespace WebTest
     public partial class Program
     {
         public static IWebDriver d;
-        public static string inifile;
-        public static string targetURL;
-        public static string uid;
-        public static string uname;
-        public static string pid;
-        public static string pw;
-        public static string submitid;
+        public static string inifile, targetURL, uid, uname, pid, pw, submitid;
         public static  int outlevel;
 
         public static Excel.Application xla;
         public static Excel.Range xlr;
         public static Excel.Workbook xlw;
         public static Excel.Worksheet xls;
-        public static string xlPath;
-        public static string webpath;
-        public static string webfile;
-        public static string datestring;
-        public static string pr;
-        public static string test;
+
+        public static string webpath, webfile, datestring, pr, logpath;
+        public static string test, apppath, appname, xlname, xlPath, xlpath, logname, curpath ;
+
         static void Main(string[] args)
         {
-            //Initialize variables
-            string apppath;
+            //Initialize variables, set up the outfiles
             apppath = curdir();
-            xlPath = apppath + "\\webapptest.xls";
-            Console.Out.WriteLine(timeStamp());
+            appname = curname();
+            xlname = appname + ".xlsx";
+            xlpath = apppath + "\\" + xlname;
+            logname = appname + ".log";
+            mkdir("results");
+            curpath = "results\\" + dtstring() + "-" + appname;
+            webfile = appname + ".html";
+            mkdir(curpath);
+            webpath = curpath + "\\" + webfile;
+            logpath = curpath + "\\" + logname;
 
-            //fetch values from Excel sheet
-            openXL(xlPath);
-            write2log("webtest.log", "FKF Login");
-            w("START.");
-            inifile = "testparms.ini";
-            w("Testing Login");
+            //xlpath = "WebAppTest.xls";
+            //xlPath = apppath + "\\" + appname;
+            openXL(xlpath);
             targetURL = getXLParm("targetURL");
             uid = getXLParm("uid");
             uname = getXLParm("uname");
             pid = getXLParm("pid");
             pw = getXLParm("pword");
-            submitid = getXLParm("submitid");
+            submitid = getXLParm("submitID");
             webfile = getXLParm("webfile");
             test = getXLParm("test");
-            datestring = dtstring();
+            //datestring = dtstring();
             webfile = datestring + "-" + webfile;
-            w(webfile);
-            webpath = apppath + "\\" + webfile;
-
+            //w(webfile);
+            //webpath = apppath + "\\results\\" + webfile;
             closeXL();
-            mkdir("testing123");
+            //mkdir("testing123");
 
             //Start browser & test sequence
             w("  Open browser");
@@ -79,10 +73,6 @@ namespace WebTest
             go (targetURL);
 
             exec(test);
-            /*string test1 = "Login";
-            m = t.GetMethod(test1);
-            m.Invoke(o, null);
-            //Login();*/
 
             //Close and clean up browser stuff
             w("Clean up");
@@ -91,8 +81,8 @@ namespace WebTest
             w("END");
 
             //Output results to web page and display it
-            writeHTML(webfile);
-            startOut(webpath);
+            writeHTML(webpath);
+            startOut(apppath + "\\" + webpath);
         }
     }
 }
