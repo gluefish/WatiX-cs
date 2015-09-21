@@ -7,8 +7,6 @@ namespace WebTest
         public static void openXL(string xlp)
         {
             xla = new Excel.Application();
-            //xlw = xla.Workbooks.Open("test.xlsx");
-
             xlw = xla.Workbooks.Open(xlp);
             xls = xlw.Worksheets.get_Item(1);
             xlr = xls.UsedRange;
