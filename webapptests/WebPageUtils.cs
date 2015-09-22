@@ -10,7 +10,7 @@ namespace WebTest
             w(pagename);
             StreamWriter sw = File.AppendText(pagename);
             sw.Write(pageHeader());
-            sw.WriteLine("<h1><c>Hello Web Page</c></h1>");
+            //sw.WriteLine("<h1><c>Hello Web Page</c></h1>");
             sw.WriteLine(tablerow());
             sw.Write(pageFooter());
             sw.Close();
@@ -26,7 +26,13 @@ namespace WebTest
         public static string pageHeader()
         {
             string ph;
-            ph = "<html>\n<head>\n</head>\n<body>\n";
+            ph = "<html>\n<head>"
+                + "\n</head>\n<body>"
+                + "\n<h1>TEST AUTOMATION RESULT</h1>"
+                + "\n<table border=\"1\" style=\"width: 100 % \">"
+                + "\n<tr><td>Test Run Name:</td><td>Date:</td><td>Time:</td></tr>"
+                + "\n<tr><td>" + appname + "</td><td>" + System.DateTime.Now.ToString("MM/dd/yy") + "</td><td>" + System.DateTime.Now.ToString("hh:mm:ss") + "</td></tr>"
+                + "\n</table>\n";
             return ph;
         }
 
