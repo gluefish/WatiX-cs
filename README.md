@@ -21,9 +21,6 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	Output Location -
 		As a user, I want the log file and web page to be put in a separate folder for each testing session, under a 
 		folder "results".
-	Web Page Header Info -
-		As a tester, I want the html output page to include data about the test session, in a header above the 
-		individual test lines.
 	Web Page Test Info - 
 		As a tester, I want the html output page to have some meta info present on individual test lines.
 	Web Output - started 9/11 - 
@@ -44,7 +41,10 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a user, I want commands on the sheet be executable in the program.
 	GIT - created 9/18
 		As a developer I want to have a structure for saving, committing, checking in & out, and tracking, file edits
-	
+	Web Page Header Info - done 9/21
+		As a tester, I want the html output page to include data about the test session, in a header above the 
+		individual test lines.
+
 **************************************************************************************************************************	
 ##Backlog
 **************************************************************************************************************************
