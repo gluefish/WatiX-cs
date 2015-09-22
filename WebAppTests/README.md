@@ -8,7 +8,7 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	- Test results stored to .log file and html
 
 
-
+![logo](http://www.gluefish.com/watix/watix-flow.png "")
 
 **************************************************************************************************************************
 ##In Progress
