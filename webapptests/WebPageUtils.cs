@@ -10,7 +10,6 @@ namespace WebTest
             w(pagename);
             StreamWriter sw = File.AppendText(pagename);
             sw.Write(pageHeader());
-            //sw.WriteLine("<h1><c>Hello Web Page</c></h1>");
             sw.WriteLine(tablerow());
             sw.Write(pageFooter());
             sw.Close();
