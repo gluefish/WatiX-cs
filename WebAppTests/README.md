@@ -24,8 +24,6 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	Web Page Header Info -
 		As a tester, I want the html output page to include data about the test session, in a header above the 
 		individual test lines.
-	Web Page Test Info - 
-		As a tester, I want the html output page to have some meta info present on individual test lines.
 	Web Output - started 9/11 - 
 		As a user, I want to see a web page with the information and results of every test that has been run.
 		I want to put these in a unique folder along with the other results of individual tests.
@@ -44,6 +42,8 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a user, I want commands on the sheet be executable in the program.
 	GIT - created 9/18
 		As a developer I want to have a structure for saving, committing, checking in & out, and tracking, file edits
+	Web Page Test Info - done 9/21
+		As a tester, I want the html output page to have some meta info present on individual test lines.
 	
 **************************************************************************************************************************	
 ##Backlog
