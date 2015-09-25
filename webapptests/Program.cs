@@ -11,7 +11,8 @@
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using Excel = Microsoft.Office.Interop.Excel;
+using System.IO;
+//using Excel = Microsoft.Office.Interop.Excel;
 
 namespace WebTest
 {
@@ -21,18 +22,19 @@ namespace WebTest
         public static string inifile, targetURL, uid, uname, pid, pw, submitid;
         public static  int outlevel;
 
-        public static Excel.Application xla;
-        public static Excel.Range xlr;
-        public static Excel.Workbook xlw;
-        public static Excel.Worksheet xls;
+        //public static Excel.Application xla;
+        //public static Excel.Range xlr;
+        //public static Excel.Workbook xlw;
+        //public static Excel.Worksheet xls;
 
         public static string webpath, webfile, datestring, pr, logpath;
         public static string test, apppath, appname, xlname, xlPath, xlpath, logname, curpath ;
 
         static void Main(string[] args)
         {
-            //Initialize variables, set up the outfiles
-            apppath = curdir();
+            writeWeb();
+                //Initialize variables, set up the outfiles
+                apppath = curdir();
             appname = curname();
             xlname = appname + ".xlsx";
             xlpath = apppath + "\\" + xlname;
@@ -46,16 +48,16 @@ namespace WebTest
 
             // Fetch the variables from the Excel sheet
             openXL(xlpath);
-            targetURL = getXLParm("targetURL");
-            uid = getXLParm("uid");
-            uname = getXLParm("uname");
-            pid = getXLParm("pid");
-            pw = getXLParm("pword");
-            submitid = getXLParm("submitID");
-            webfile = getXLParm("webfile");
-            test = getXLParm("test");
+            //targetURL = getXLParm("targetURL");
+            //uid = getXLParm("uid");
+            //uname = getXLParm("uname");
+            //pid = getXLParm("pid");
+            //pw = getXLParm("pword");
+            //submitid = getXLParm("submitID");
+            //webfile = getXLParm("webfile");
+            //test = getXLParm("test");
             webfile = datestring + "-" + webfile;
-            closeXL();
+            //closeXL();
 
             //Start browser & test sequence
             w("  Open browser");
@@ -76,5 +78,6 @@ namespace WebTest
             string webspec = apppath + "/" + webpath;
             startOut(webspec);
         }
+
     }
 }

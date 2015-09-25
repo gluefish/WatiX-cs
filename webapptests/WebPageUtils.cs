@@ -1,9 +1,25 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace WebTest
 {
     public partial class Program
     {
+        public static void writeHTMLFromTextFile(string textfile)
+        {
+            //open a new html file with the filename stub + .html
+            //open the textfile for a read
+            //read the first line
+            //create a table of its contents
+            //loop through the rest of the lines
+            //create a table and rows of the test results
+            //on the last line, create a table of results
+            //write the rows
+            //write the footer
+            //save to the local drive and close the html file and text file
+            //open up the browser with the html file
+        }
+
         public static void writeHTML(string filename)
         {
             string pagename = curdir() + "/" + filename;
@@ -12,6 +28,67 @@ namespace WebTest
             sw.Write(pageHeader());
             sw.WriteLine(tablerow());
             sw.Write(pageFooter());
+            sw.Close();
+        }
+        
+        public static void writeWeb()
+        {
+            string l;
+            int ll = File.ReadAllLines("TestOutput.txt").Length;
+
+            StreamWriter sw = new StreamWriter("TestOutput.html");
+
+            //Open the output for the html file
+            //use the same name as the text file
+            //bla bla()
+
+            //write the html header
+            sw.WriteLine("<!DOCTYPE html>");
+            sw.WriteLine("<html>\n  <head>\n  </head>\n  <body>");
+            using (StreamReader sr = new StreamReader("TestOutput.txt"))
+            {
+                l = sr.ReadLine();
+                // Table for test suite information
+                sw.WriteLine("    <table border=\"1\" style=\"width:100%; color:white\"><tr><td align=\"center\" bgcolor=\"blue\"><h2><c>" + l + "</c></h2></td></tr></table>");
+                int testno = 1;
+                while (!sr.EndOfStream)
+                {
+                    l = sr.ReadLine();
+                    if (l.Contains("==="))
+                    {
+                        //sw.WriteLine("");
+                    }
+                    else if (l.Contains("TEST:"))
+                    {
+                        if (testno == 1)
+                        {
+                            sw.WriteLine("    </table>");
+                        }
+                        sw.WriteLine("    <br/>");
+                        sw.WriteLine("    <table  border=\"1\" style=\"width: 100 % \"><tr><td>" + l + "</td></tr></table>");
+                        sw.WriteLine("    <table  border=\"1\" style=\"width: 100% \">");
+                    }
+                    else
+                    {
+                        if (l.Length > 0)
+                        {
+                            String[] lll = l.Split(' ');
+                            sw.WriteLine("    <tr><td>" + lll[0] + "</td>");
+                            string l2 = l.Replace(lll[0], "");
+                            l2 = l2.Replace(" -- Pass", "");
+                            l2 = l2.Replace(" -- Fail", "");
+                            sw.WriteLine("    <td>" + l2 + "</td>");
+                            if (l.Contains("Pass")) sw.WriteLine("  <td bgcolor = \"lightgreen\">PASS</td>");
+                            if (l.Contains("Fail")) sw.WriteLine("  <td bgcolor = \"pink\">FAIL</td>");
+                            if (l.Contains("Skip")) sw.WriteLine("  <td bgcolor = \"lightgray\">SKIPPED</td>");
+                        }
+                    }
+                }
+            }
+
+            //write the html footer
+            sw.WriteLine("    </table>");
+            sw.WriteLine("  </body>\n</head>");
             sw.Close();
         }
 

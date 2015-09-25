@@ -27,4 +27,9 @@ C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\WebAppTests.p
 C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\WebAppTests.csprojResolveAssemblyReference.cache
 C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.Microsoft.Office.Core.dll
 C:\Users\gluefish\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.Microsoft.Office.Core.dll
-C:\Users\gluefish\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebAppTests.exe
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebAppTests.pdb
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebDriver.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebDriver.Support.dll
