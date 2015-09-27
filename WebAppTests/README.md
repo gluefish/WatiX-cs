@@ -18,10 +18,10 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a user, I want to be able to examine a log file of the processes that occurred within a test run.
 	Excel Read Vars - started 9/4
 		As a user, I want to have my variables on an Excel sheet, be imported into the test program.
-	Output Location -
+	Output Location - Started 9/21
 		As a user, I want the log file and web page to be put in a separate folder for each testing session, under a 
 		folder "results".
-	Web Page Header Info -
+	Web Page Header Info - Started 9/24
 		As a tester, I want the html output page to include data about the test session, in a header above the 
 		individual test lines.
 	Web Output - started 9/11 - 
@@ -36,7 +36,7 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	exec() function - done 9/17
 		As a developer I want to have a string variable with a command in it, cause the execution of a method by that
 		name.
-    	Read Excel function - created 9/17
+    Read Excel function - created 9/17
 		As a developer I want to have the program open an Excel file, read cells from it, and close it.
 	Excel Import Commands - started 9/16, done 9/17
 		As a user, I want commands on the sheet be executable in the program.
