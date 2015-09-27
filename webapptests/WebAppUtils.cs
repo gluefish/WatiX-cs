@@ -164,8 +164,9 @@ namespace WebTest
             return null;
         }
 
-        public static void startOut(string filespec)
+        public static void startIE(string filespec)
         {
+            // Start an IE browser session displaying a local .html page
             System.Diagnostics.Process proc = new System.Diagnostics.Process();
             proc.EnableRaisingEvents = false;
             proc.StartInfo.FileName = "iexplore";

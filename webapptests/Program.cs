@@ -75,7 +75,7 @@ namespace WebTest
             //Output results to web page and display it
             writeHTML(webpath);
             string webspec = apppath + "/" + webpath;
-            startOut(webspec);
+            startIE(webspec);
         }
 
     }
