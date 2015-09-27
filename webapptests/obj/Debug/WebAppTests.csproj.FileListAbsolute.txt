@@ -33,3 +33,7 @@ C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\Selenium.WebD
 C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\ThoughtWorks.Selenium.Core.dll
 C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebDriver.dll
 C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\bin\Debug\WebDriver.Support.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Lou\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.VBIDE.dll
+C:\Users\gluefish\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\gluefish\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\obj\Debug\Interop.VBIDE.dll

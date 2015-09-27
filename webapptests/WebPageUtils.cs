@@ -33,18 +33,20 @@ namespace WebTest
         
         public static void writeWeb()
         {
-            string l;
-            int ll = File.ReadAllLines("TestOutput.txt").Length;
+            //This method depends on a specific output format on TestOutput.txt
 
+            // //Read the TestOutput.txt document into memory.
+            // //int ll = File.ReadAllLines("TestOutput.txt").Length;
+
+            //Open the output for the html file with same name as the text file
             StreamWriter sw = new StreamWriter("TestOutput.html");
-
-            //Open the output for the html file
-            //use the same name as the text file
-            //bla bla()
 
             //write the html header
             sw.WriteLine("<!DOCTYPE html>");
             sw.WriteLine("<html>\n  <head>\n  </head>\n  <body>");
+
+            //write the lines of the body, from the text file
+            string l;
             using (StreamReader sr = new StreamReader("TestOutput.txt"))
             {
                 l = sr.ReadLine();
@@ -86,9 +88,9 @@ namespace WebTest
                 }
             }
 
-            //write the html footer
+            //write the html footer and close the page
             sw.WriteLine("    </table>");
-            sw.WriteLine("  </body>\n</head>");
+            sw.WriteLine("  <\n/body>\n</html>");
             sw.Close();
         }
 

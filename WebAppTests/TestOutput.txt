@@ -1,0 +1,47 @@
+﻿​9/22/2015 Selenium Test Output
+
+
+===================================================================
+TEST: Settings, Messages, Accounts+Transaction History Test Cases
+DCXA-127 Login -- Pass
+DCXA-95 Delete Message -- Pass
+DCXA-108 Enter Messaging Menu And Send Secure Message -- Pass
+DCXA-162 Sending Message Via Contact Us (Authenicated User) -- Pass
+DCXA-139 Contact Information -- Pass
+DCXA-159 Enroll In Text Banking -- Pass
+DCXA-125 Configure Accounts For Text Banking -- Pass
+DCXA-96 Unenroll From Text Banking -- Pass
+DCXA-152 Create New Alerts Manually -- Pass
+DCXA-156 Verify Customer is able to create Account and Transaction Alerts -- Pass
+DCXA-93 Edit Delivery Preferences for Alerts -- Pass
+DCXA-98 Verify Alert Toggle Buttons -- Pass
+DCXA-157 Able To View E-statements -- Pass
+DCXA-116 Stop Check Payment -- Pass
+DCXA-101 Verify Transaction Search Using Default Filters -- Pass
+DCXA-102 Verify Transaction Search Using 'More Filters' -- Pass
+Settings, Messages, Accounts+Transaction History Test Cases: Pass.
+
+===================================================================
+TEST: Transfer Funds Test Cases
+DCXA-141 Schedule A One Time Internal Transfer -- Pass
+DCXA-1 Schedule A Recurring Internal Transfer -- Pass
+DCXA-133 Edit A One-Time Transfer -- Pass
+DCXA-137 Edit A Recurring Transfer Series -- Fail
+DCXA-94 Cancel A Single Transfer, DCXA-161 Delete Single Internal Transfer -- Skip
+DCXA-154 Cancel Recurring Transfer Series -- Skip
+Transfer Funds Test Cases: Fail.
+
+===================================================================
+DCXA-118 Add Biller Manually -- Pass
+DCXA-143 Verify The Company Search Results, DCXA-100 Add Biller By Company Search -- Pass
+DCXA-90 Verify Filter Search By Group -- Pass
+DCXA-126 Verify Filter Search For Payee -- Pass
+DCXA-123 Pay Multiple Bills -- Pass
+DCXA-135 Payment To A New Payee -- Pass
+DCXA-654 Pay Additional Bill Payment -- Pass
+DCXA-113 Edit Series For Bill Payment -- Pass
+DCXA-89 Search Biller Payment History By Date Range -- Pass
+DCXA-154 Cancel Recurring Transfer Series -- Pass
+DCXA-104 Delete Bill Payment -- Pass
+DCXA-158 Edit Biller Information -- Pass
+Bill Pay Test Cases: Pass.
