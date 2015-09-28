@@ -66,6 +66,7 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 9/28 Built a batch file to compile foo.bar into foobar.exe and execute it 
 
 9/28 Executed the compile, executed the result .exe, from the Excel immediate window
+
 	shell “cmd.exe /k cd “ & thisworkbook.path & “&& foobar.bat”
 
 (added a System.Console.ReadLine(); to the foo.bar to pause the execution)
