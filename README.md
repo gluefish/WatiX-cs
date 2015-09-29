@@ -72,7 +72,5 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 (added a System.Console.ReadLine(); to the foo.bar to pause the execution)
 
 ###Comment: 
-I seem to be going back and forth between the methods of reading the excel file from the exe, compiling, and running, or having the excel file write the .cs, compile, and running it.  Today (9/28) I am leaning toward the latter.
-
 9/28 - For a csc compile to work - you have to generate the csc code from vs to get all the references.  This is a huge amount of text - best to put it ina batch file.  The csc.exe has to be quoted because of the space in "program files".  Also, at the end, need to add /out:yourappname.exe.  This solution worked today. Test: make a change to the program.cs, run the batch, run the exe, check for change. Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, ran the exe, the resulting console had the comments displayed.
 
