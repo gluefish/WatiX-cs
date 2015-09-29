@@ -9,15 +9,50 @@
 *****************************************************************/
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Diagnostics;
+using System.Net;
 using OpenQA.Selenium;
+using Microsoft.CSharp;
+using System.CodeDom.Compiler;
 
 namespace WebTest
 {
     public partial class Program
     {
+        public static void compileSource()
+        {
+            //UNDER CONSTRUCTION
+            string source = @"
+namespace Foo
+{
+    public class Bar
+    {
+        public void SayHello()
+        {
+            System.Console.WriteLine(""Hello World"");
+        }
+    }
+}
+            ";
+            Dictionary<string, string> providerOptions = new Dictionary<string, string>
+            {
+                {"CompilerVersion", "v4" }
+            };
+            CSharpCodeProvider provider = new CSharpCodeProvider(providerOptions);
+            CompilerParameters compilerParams = new CompilerParameters
+                {GenerateInMemory = true,
+                GenerateExecutable = false};
+            CompilerResults results = provider.CompileAssemblyFromSource(compilerParams, source);
+            if (results.Errors.Count != 0)
+                throw new Exception("Mission Failed");
+            object o = results.CompiledAssembly.CreateInstance("Foo.Bar");
+            MethodInfo mi = o.GetType().GetMethod("SayHello");
+            mi.Invoke(o, null);
+        }
+
         public static void click(string elem)
         {
             w("  ...Clicking " + elem);
@@ -133,14 +168,12 @@ namespace WebTest
             if (outlevel > 0)
             {
                 write2log("webtest.log", xx);
-                Debug.WriteLine(xx);
             }
         }
 
         public static void write2log(string filename, string txt)
         {
             Console.WriteLine(timeStamp() + " " + txt);
-            //Debug.Print(timeStamp() + " " + txt);
             StreamWriter sw = File.AppendText(filename);
             if (txt == "")
             {

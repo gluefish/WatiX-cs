@@ -1,18 +1,13 @@
-﻿/****************************************************************
+﻿/**Program.cs****************************************************
 * WebAppUtils   - A support file for Selenium Frameworks
-* Module        - This is the utils file, partial class same as on main
+* Module        - This is the Program file, partial class same as on main
 * Author        - Louie Wilson - gluefish@gmail.com
 * Date          - 9/10/15 
 *               - Output to visual file such as Excel or html
-* Update 9-14   - Routine to output html file and display it
-*               - Generate a unique test ID for file name
-*               - Generate a folder for day's tests
 *****************************************************************/
-using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using System.IO;
-using Excel = Microsoft.Office.Interop.Excel;
+using OpenQA.Selenium.Chrome;
 
 namespace WebTest
 {
@@ -27,15 +22,12 @@ namespace WebTest
 
         static void Main(string[] args)
         {
-            //writeWeb();
-            //string xlp = curdir() + "\\webapptests.xlsx";
-            //openXL(xlp);
+            w("START");
 
-            //closeXL();
-                //Initialize variables, set up the outfiles
-                apppath = curdir();
+            w("  Initialize variables, set up outfiles");
+            apppath = curdir();
             appname = curname();
-            xlname = appname + ".xlsx";
+            xlname = appname + ".xls";
             xlpath = apppath + "\\" + xlname;
             logname = appname + ".log";
             mkdir("results");
@@ -45,7 +37,7 @@ namespace WebTest
             webpath = curpath + "\\" + webfile;
             logpath = curpath + "\\" + logname;
 
-            // Fetch the variables from the Excel sheet
+            w("  Fetch variables from the Excel sheet");
             openXL(xlpath);
             targetURL = getXLParm("targetURL");
             uid = getXLParm("uid");
@@ -58,13 +50,13 @@ namespace WebTest
             webfile = datestring + "-" + webfile;
             closeXL();
 
-            //Start browser & test sequence
             w("  Open browser");
             d = new FirefoxDriver();
+
             w("  Navigate to the login screen");
             go (targetURL);
 
-            //Run the tests - as indicated in the Excel sheet
+            w("  Run the tests - as indicated in the Excel sheet");
             exec(test);
 
             //Close and clean up browser stuff
