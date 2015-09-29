@@ -59,7 +59,9 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 - [ ] Excel write and run -
 	As a test writer, I want Excel to generate the source code for test .cs script, then compile and 
 	execute the test
-
+- [ ] Excel generate program source code -
+ 	As a test writer, I want to have Excel generate the source code, for the variables and test names in program.cs
+	
 ###Research
 
 - [ ] 9/27 Built a compile from command line .exe = see foo.bar
