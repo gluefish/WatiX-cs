@@ -9,7 +9,9 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 
 ![logo](http://www.gluefish.com/watix/watix-flow.png "")
 
-
+## Intention
+We want the tester - a non-programmer - to have an Excel file that will run a test automation suite and produce an output based on some parameters he enters.  
+Suites and tests need to be developed on Visual Studio, but can be called by the Excel sheet.
 ##In Progress
 
 - [ ] Log Output - 
