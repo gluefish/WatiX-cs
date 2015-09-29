@@ -73,3 +73,6 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 
 ###Comment: 
 I seem to be going back and forth between the methods of reading the excel file from the exe, compiling, and running, or having the excel file write the .cs, compile, and running it.  Today (9/28) I am leaning toward the latter.
+
+9/27 - For a csc compile to work - you have to generate the csc code from vs to get all the references.  This is a huge amount of text - best to put it ina batch file.  The csc.exe has to be quoted because of the space in "program files".  Also, at the end, need to add /out:yourappname.exe
+
