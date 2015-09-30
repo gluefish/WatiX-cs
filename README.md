@@ -12,8 +12,11 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 ## Intention
 We want the tester - a non-programmer - to have an Excel file that will run a test automation suite and produce an output based on some parameters he enters.  
 Suites and tests need to be developed on Visual Studio, but can be called by the Excel sheet.
+
 ##In Progress
 
+- [ ] Web Result Page - 
+	As a tester I want to see a body of the HTML output with a table, and a row for each test performed, with times and 			results (Passed, Failed, Skipped)
 - [ ] Log Output - 
 	As a user, I want to be able to examine a log file of the processes that occurred within a test run.
 - [ ] Excel Read Vars - started 9/4
