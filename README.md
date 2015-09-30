@@ -69,9 +69,10 @@ Suites and tests need to be developed on Visual Studio, but can be called by the
 	
 ###Research
 
-- [ ] 9/27 Built a compile from command line .exe = see foo.bar
-- [ ] 9/28 Built a batch file to compile foo.bar into foobar.exe and execute it 
-- [ ] 9/28 Executed the compile, executed the result .exe, from the Excel immediate window
+= [ ] Try to make a DLL of the WebAppUtils, ExcelUtils, and WebPageUtils - executable by an .exe Program.exe
+- [x] 9/27 Built a compile from command line .exe = see foo.bar
+- [x] 9/28 Built a batch file to compile foo.bar into foobar.exe and execute it 
+- [x] 9/28 Executed the compile, executed the result .exe, from the Excel immediate window
 
 	shell “cmd.exe /k cd “ & thisworkbook.path & “&& foobar.bat”
 
