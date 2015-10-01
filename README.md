@@ -7,6 +7,13 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 	- Parameters fetched from Excel file
 	- Test results stored to .log file and html
 
+## Overview
+* Excel file contains parameters to start the test with
+* Excel VBA has macro to generate an .exe file and execute it
+* The .exe file acceses functions in a .Com file which contains code to access web pages
+* The .exe file opens a browser and web page and executes tests
+* The results are logged and written and displayed in a web page
+
 ![logo](http://www.gluefish.com/watix/watix-flow.png "")
 
 ## Intention
