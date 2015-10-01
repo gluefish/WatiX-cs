@@ -94,3 +94,5 @@ Text attributes *italic*, **bold**,
 |:------|-------|------:|:------:|
 | Row 1 | First test | 1.0 | Here is a title |
 | row 2 | First test case | 1.1 | Here is a step |
+
+<font size=8px>hello</font>
