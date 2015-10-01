@@ -84,6 +84,7 @@ Suites and tests need to be developed on Visual Studio, but can be called by the
 	shell “cmd.exe /k cd “ & thisworkbook.path & “&& foobar.bat”
 
 (added a System.Console.ReadLine(); to the foo.bar to pause the execution)
+- [x] 10/1 Built a simple sample dll, executed it from Program
 
 ###Comment: 
 9/28 - For a csc compile to work - you have to generate the csc code from vs to get all the references.  This is a huge amount of text - best to put it ina batch file.  The csc.exe has to be quoted because of the space in "program files".  Also, at the end, need to add /out:yourappname.exe.  This solution worked today. Test: make a change to the program.cs, run the batch, run the exe, check for change. Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, ran the exe, the resulting console had the comments displayed.
