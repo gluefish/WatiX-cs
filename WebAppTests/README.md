@@ -69,3 +69,5 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a test writer, I want Excel to compile the script
 	Excel Execute
 		As a tester, I want Excel to execute the test
+	Program Error Handling - 
+		As a tester, I want all functions and tests wrapped in try-catch traps, with the error echoed in the output
