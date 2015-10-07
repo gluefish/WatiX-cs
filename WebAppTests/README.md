@@ -71,3 +71,23 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a tester, I want Excel to execute the test
 	Program Error Handling - 
 		As a tester, I want all functions and tests wrapped in try-catch traps, with the error echoed in the output
+
+###Research
+
+- [ ] Try to make a DLL of the WebAppUtils, ExcelUtils, and WebPageUtils - executable by an .exe Program.exe  
+- 10/1 Built a simple sample dll, executed it from Program.
+- [x] 9/27 Built a compile from command line .exe = see foo.bar
+- [x] 9/28 Built a batch file to compile foo.bar into foobar.exe and execute it 
+- [x] 9/28 Executed the compile, executed the result .exe, from the Excel immediate window  
+	shell “cmd.exe /k cd “ & thisworkbook.path & “&& foobar.bat”  
+(added a System.Console.ReadLine(); to the foo.bar to pause the execution)
+
+###Comment: 
+9/28 - For a csc compile to work - you have to generate the csc code from vs to get all the references.  
+This is a huge amount of text - best to put it ina batch file.  
+The csc.exe has to be quoted because of the space in "program files".  
+Also, at the end, need to add /out:yourappname.exe.  This solution worked today. 
+Test: make a change to the program.cs, run the batch, run the exe, check for change. 
+Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, 
+ran the exe, the resulting console had the comments displayed.
+10/7: Merging all the loose pieces
