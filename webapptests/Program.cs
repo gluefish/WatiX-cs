@@ -50,8 +50,9 @@ namespace WebTest
             webfile = datestring + "-" + webfile;
             closeXL();
 
-            w("  Open browser");
-            d = new FirefoxDriver();
+            //w("  Open browser");
+            //d = new FirefoxDriver();
+            d = new ChromeDriver();
 
             w("  Navigate to the login screen");
             go (targetURL);
