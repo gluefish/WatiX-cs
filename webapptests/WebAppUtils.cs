@@ -104,8 +104,15 @@ namespace Foo
         public static void go(string url)
         {
             w("  ...Navigating to " + url);
+            try { 
             d.Navigate().GoToUrl(url);
+            }
+            catch (Exception e)
+            {
+                w("    FAIL: " + e.ToString());
+            }
         }
+    
 
         public static void mkdir(string dirname)
         {
@@ -156,7 +163,13 @@ namespace Foo
         public static void type(string elem, string str)
         {
             w("  ...Typing " + str + " into " + elem);
-            d.FindElement(By.Id(elem)).SendKeys(str);
+            try
+            {
+                d.FindElement(By.Id(elem)).SendKeys(str);
+            } catch (Exception e)
+            {
+                w( "    FAIL: "  + e.ToString());
+            }
         }
 
         public static void typex(string elem, string str)
@@ -164,8 +177,14 @@ namespace Foo
             // Modify this to fit your AUT
             // In this case, the inputs all had a 'test-id'
             w("  ...Typing " + str + " into " + elem + " (by xpath)");
-            string xquery = "//input[contains(@test-id, '" + elem + "')]";
-            d.FindElement(By.XPath(xquery));
+            try {
+                string xquery = "//input[contains(@test-id, '" + elem + "')]";
+                d.FindElement(By.XPath(xquery));
+            }
+            catch (Exception e)
+            {
+                w("    FAIL: " + e.ToString());
+            }
         }
 
         public static void w(string xx)

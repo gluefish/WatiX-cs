@@ -1,4 +1,5 @@
 ﻿using Excel = Microsoft.Office.Interop.Excel;
+using System;
 
 namespace WebTest
 {
@@ -11,16 +12,30 @@ namespace WebTest
 
         public static void openXL(string xlp)
         {
+            try { 
             xla = new Excel.Application();
             xlw = xla.Workbooks.Open(xlp);
             xls = xlw.Sheets[1];
             xlr = xls.UsedRange;
-        }
+            }
+            catch (Exception e)
+            {
+                w("    FAIL: " + e.ToString());
+            }
+        
+    }
 
         public static string getXLCell(int r, int c)
         {
+            try { 
             string x = xlr.Cells[r, c].Value;
             return x;
+            }
+            catch (Exception e)
+            {
+                w("    FAIL: " + e.ToString());
+                return "";
+            }
         }
 
         public static string getXLParm(string parm)

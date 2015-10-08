@@ -46,7 +46,9 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a tester, I want the html output page to have some meta info present on individual test lines.
 - [x] Excel Read Vars - started 9/4, done 10/8:  
 		As a user, I want to have my variables on an Excel sheet, be imported into the test program.
-	
+- [x] Error handling - Done 10/8:  
+		As a tester I want to see where the errors occurred, and have the PASS / FAIL state maintained in a state variable
+
 **************************************************************************************************************************	
 ##Backlog
 **************************************************************************************************************************
