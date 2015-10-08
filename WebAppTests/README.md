@@ -70,6 +70,7 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a tester, I want all functions and tests wrapped in try-catch traps, with the error echoed in the output
 - [ ] Excel Execute:  
 		As a tester, I want to have the program execute all the tests marked as "test" in the spreadsheet
+
 		
 ###Research
 
@@ -90,3 +91,4 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
   * Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, 
   ran the exe, the resulting console had the comments displayed.  
   * 10/7: Merging all the loose pieces
+- [ ] Added necessary .xls and chromedriver to repo
