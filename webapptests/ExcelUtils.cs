@@ -29,6 +29,7 @@ namespace WebTest
              {
                 if (xlr.Cells[r, 1].Value == parm)
                 {
+                    w("    " + parm + " = " + xlr.Cells[r, 2].Value);
                     return xlr.Cells[r, 2].Value;
                 }
              }
