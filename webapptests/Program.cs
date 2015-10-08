@@ -17,11 +17,13 @@ namespace WebTest
         public static string inifile, targetURL, uid, uname, pid, pw, submitid;
         public static  int outlevel;
 
-        public static string webpath, webfile, datestring, pr, logpath;
+        public static string webpath, webfile, datestring, pr, logpath, errstring;
         public static string test, apppath, appname, xlname, xlPath, xlpath, logname, curpath ;
 
         static void Main(string[] args)
         {
+            errstring = "";
+
             w("START");
 
             w("  Initialize variables, set up outfiles");
