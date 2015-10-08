@@ -71,7 +71,9 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a tester, I want Excel to execute the test
 	Program Error Handling - 
 		As a tester, I want all functions and tests wrapped in try-catch traps, with the error echoed in the output
-
+	Excel Execute
+		As a tester, I want to have the program execute all the tests marked as "test" in the spreadsheet
+		
 ###Research
 
 - [ ] Try to make a DLL of the WebAppUtils, ExcelUtils, and WebPageUtils - executable by an .exe Program.exe  
