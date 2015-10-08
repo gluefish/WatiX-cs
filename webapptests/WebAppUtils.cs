@@ -55,8 +55,14 @@ namespace Foo
 
         public static void click(string elem)
         {
-            w("  ...Clicking " + elem);
-            d.FindElement(By.Id(elem)).Click();
+            w("    Clicking " + elem);
+            try
+            {
+                d.FindElement(By.Id(elem)).Click();
+            } catch (Exception e)
+            {
+                errstring = e.ToString();
+            }
         }
 
         public static string curdir()
