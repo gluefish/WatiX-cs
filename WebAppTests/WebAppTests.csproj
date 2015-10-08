@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>..\..\..\..\Downloads\selenium-dotnet-2.47.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Work\Umpqua\includes\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,13 +45,16 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>..\..\..\..\Downloads\selenium-dotnet-2.47.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Work\Umpqua\includes\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WatixUtils">
+      <HintPath>..\..\..\..\Dropbox\Work\Umpqua\WebAppTests\WebAppTests\WatixUtils.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver">
-      <HintPath>..\..\..\..\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Work\Umpqua\includes\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>..\..\..\..\Downloads\selenium-dotnet-2.47.0\net40\WebDriver.Support.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Work\Umpqua\includes\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +68,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="README.md" />
+    <None Include="WebAppTests.xls" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
@@ -96,6 +100,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chromedriver.exe" />
     <Content Include="Screenshot 2015-09-22 10.50.07b.png" />
     <Content Include="TestOutput.txt" />
   </ItemGroup>
