@@ -59,6 +59,8 @@ namespace WebTest
             w("  Navigate to the login screen");
             go (targetURL);
 
+            w("  Login");
+
             w("  Run the tests - as indicated in the Excel sheet");
             exec(test);
 

@@ -68,12 +68,18 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		As a test writer, I want Excel to generate the source code for test .cs script 
 - [ ] Excel Compile:  
 		As a test writer, I want Excel to compile the script
-- [ ] Excel Execute:  
-		As a tester, I want Excel to execute the test
 - [ ] Program Error Handling:  
 		As a tester, I want all functions and tests wrapped in try-catch traps, with the error echoed in the output
 - [ ] Excel Execute:  
 		As a tester, I want to have the program execute all the tests marked as "test" in the spreadsheet
+- [ ] Screenshot:  
+		As a tester, I want options to have screenshots of all fail points and optionally, success points;
+		And to have the link to those screenshots included in the html page output
+- [ ] Test Levels:  
+		NOT TESTED; PASS; FAIL; ABORT (catastrophic fail). All tests start out NOT TESTED.  
+		* After each test passes, control starts next test.  
+		* After a test FAILS, control starts next test.  
+		* After ABORT, control goes to next tests but does not execute, rather skips them without changing NOT TESTED.
 		
 ###Research
 
