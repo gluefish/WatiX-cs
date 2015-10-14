@@ -88,6 +88,7 @@ namespace Foo
 
         public static void exec(string Cmd)
         {
+            w("  Executing Command: '" + Cmd + "'");
             Program o = new Program();
             Type t = typeof(Program);
             MethodInfo m = t.GetMethod(Cmd);
