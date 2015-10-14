@@ -22,13 +22,10 @@ namespace WebTest
                 click("logout");
                 w("PASS");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                w("FAIL");
+                w("FAIL - Exception: " + e.ToString());
             }
-
-
         }
-
     }
 }

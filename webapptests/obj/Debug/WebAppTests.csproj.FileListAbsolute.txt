@@ -47,14 +47,6 @@ C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\Selenium.WebDriverBac
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\ThoughtWorks.Selenium.Core.dll
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.dll
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.Support.dll
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\Selenium.WebDriverBackedSelenium.xml
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\ThoughtWorks.Selenium.Core.pdb
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\ThoughtWorks.Selenium.Core.xml
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.pdb
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.xml
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.Support.pdb
-C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.Support.xml
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\obj\Debug\WebAppTests.csprojResolveAssemblyReference.cache
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\obj\Debug\WebAppTests.exe
 C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\obj\Debug\WebAppTests.pdb
@@ -73,3 +65,4 @@ C:\Users\gluefish\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.dll
 C:\Users\gluefish\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WebDriver.Support.dll
 C:\Users\gluefish\Source\Repos\WatiX-cs\WebAppTests\obj\Debug\WebAppTests.exe
 C:\Users\gluefish\Source\Repos\WatiX-cs\WebAppTests\obj\Debug\WebAppTests.pdb
+C:\Users\gluef\Source\Repos\WatiX-cs\WebAppTests\bin\Debug\WatixUtils.dll
