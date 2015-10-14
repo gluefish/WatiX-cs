@@ -80,6 +80,13 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
 		* After each test passes, control starts next test.  
 		* After a test FAILS, control starts next test.  
 		* After ABORT, control goes to next tests but does not execute, rather skips them without changing NOT TESTED.
+
+**************************************************************************************************************************
+## BUGS
+**************************************************************************************************************************
+- [x] 10/8 Added necessary .xls and chromedriver to repo...
+- [x] 10/8: Merging all the loose pieces
+- [x] 10/14: Added d.Quit() at end of program to kill the cmd window in Chromedriver.
 		
 ###Research
 
@@ -99,6 +106,6 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
   * Test: make a change to the program.cs, run the batch, run the exe, check for change.  
   * Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, 
   ran the exe, the resulting console had the comments displayed.  
-  * 10/7: Merging all the loose pieces
-- [x] Added necessary .xls and chromedriver to repo...
+
+
 
