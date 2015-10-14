@@ -1,9 +1,9 @@
 ﻿/**Program.cs****************************************************
-* WebAppUtils   - A support file for Selenium Frameworks
+* Description   - A support file for Selenium Frameworks
 * Module        - This is the Program file, partial class same as on main
 * Author        - Louie Wilson - gluefish@gmail.com
-* Date          - 9/10/15 
-*               - Output to visual file such as Excel or html
+* Date          - 10/14/15 
+*               - Output to html and text file
 *****************************************************************/
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
@@ -67,6 +67,7 @@ namespace WebTest
             //Close and clean up browser stuff
             w("Clean up");
             d.Close();
+            d.Quit();
             w("END");
 
             //Output results to web page and display it
