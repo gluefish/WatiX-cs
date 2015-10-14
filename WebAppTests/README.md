@@ -100,5 +100,5 @@ A framework for test automation using C#, Selenium Webdriver, input from Excel, 
   * Result: Passed.  I added a couple of comments output to console, saved program.cs, ran the batch, 
   ran the exe, the resulting console had the comments displayed.  
   * 10/7: Merging all the loose pieces
-- [ ] Added necessary .xls and chromedriver to repo.
+- [x] Added necessary .xls and chromedriver to repo...
 
